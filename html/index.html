@@ -8,7 +8,7 @@
         content="Portfolio profesional de AdriMB200, ingeniero de software especializado en desarrollo web, inteligencia artificial, sistemas e infraestructura.">
     <meta name="author" content="AdriMB200">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0b0d10">
+    <meta name="theme-color" content="#0c2340">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="AdriMB200 | Ingeniero de Software">
@@ -17,6 +17,10 @@
 
     <title>AdriMB200 | Ingeniero de Software</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/main.js" defer></script>
 </head>
@@ -27,8 +31,11 @@
     <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="#inicio" aria-label="Inicio">
-                <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
-                <span>AdriMB200</span>
+                <span class="brand-monogram" aria-hidden="true">AM</span>
+                <span class="brand-text">
+                    <strong>AdriMB200</strong>
+                    <small>Ingeniería de Software</small>
+                </span>
             </a>
 
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
@@ -53,7 +60,7 @@
         <section id="inicio" class="hero" aria-labelledby="hero-title">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">INGENIERÍA DE SOFTWARE · SISTEMAS · IA</p>
+                    <p class="eyebrow">Ingeniería de software · Sistemas · IA</p>
 
                     <h1 id="hero-title">
                         Diseño software para
@@ -69,101 +76,116 @@
                         <a class="button button-primary" href="#proyectos">Ver proyectos</a>
                         <a class="button button-secondary" href="#contacto">Contacto</a>
                     </div>
+
+                    <p class="stack-line">
+                        <strong>Stack principal</strong>
+                        JavaScript · React · Python · Docker · Linux
+                    </p>
                 </div>
 
-                <aside class="profile-panel" aria-label="Resumen profesional">
-                    <p class="panel-label">PERFIL</p>
+                <aside class="spec-panel" aria-label="Ficha técnica">
+                    <p class="panel-label">Ficha técnica</p>
 
-                    <dl>
-                        <div>
-                            <dt>Especialidad</dt>
-                            <dd>Ingeniería de Software</dd>
-                        </div>
-                        <div>
-                            <dt>Enfoque</dt>
-                            <dd>Desarrollo, IA y sistemas</dd>
-                        </div>
-                        <div>
-                            <dt>Entornos</dt>
-                            <dd>Web · Linux · Windows Server</dd>
-                        </div>
-                        <div>
-                            <dt>Estado</dt>
-                            <dd class="status"><span></span> Construyendo</dd>
-                        </div>
-                    </dl>
+                    <table class="spec-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Especialidad</th>
+                                <td>Ingeniería de Software</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Enfoque</th>
+                                <td>Desarrollo, IA y sistemas</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entornos</th>
+                                <td>Web · Linux · Windows Server</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Estado</th>
+                                <td><span class="status">Construyendo</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </aside>
             </div>
         </section>
 
         <section id="sobre-mi" class="section" aria-labelledby="about-title">
-            <div class="container split-layout">
-                <header class="section-header">
-                    <p class="section-index">01</p>
-                    <p class="section-label">SOBRE MÍ</p>
-                    <h2 id="about-title">Software con una base técnica y práctica.</h2>
-                </header>
+            <div class="container">
+                <div class="split-layout">
+                    <header class="section-header">
+                        <p class="section-label">Sobre mí</p>
+                        <h2 id="about-title">Software con una base técnica y práctica.</h2>
+                    </header>
 
-                <div class="prose">
-                    <p>
-                        Me interesa entender cómo funcionan los sistemas y convertir
-                        esa comprensión en soluciones que sean útiles, mantenibles y
-                        razonablemente sencillas.
-                    </p>
+                    <div class="prose">
+                        <p>
+                            Me interesa entender cómo funcionan los sistemas y convertir
+                            esa comprensión en soluciones que sean útiles, mantenibles y
+                            razonablemente sencillas.
+                        </p>
 
-                    <p>
-                        Trabajo especialmente con aplicaciones web, automatización,
-                        inteligencia artificial e infraestructura. También experimento
-                        con servidores propios, servicios autoalojados y proyectos
-                        relacionados con automoción.
-                    </p>
+                        <p>
+                            Trabajo especialmente con aplicaciones web, automatización,
+                            inteligencia artificial e infraestructura. También experimento
+                            con servidores propios, servicios autoalojados y proyectos
+                            relacionados con automoción.
+                        </p>
 
-                    <p>
-                        Intento mantener un enfoque directo: diseñar, implementar,
-                        probar, medir y corregir. Una solución más compleja no siempre
-                        es una solución mejor.
-                    </p>
+                        <p>
+                            Intento mantener un enfoque directo: una solución más compleja
+                            no siempre es una solución mejor.
+                        </p>
+                    </div>
                 </div>
+
+                <ol class="process-strip" aria-label="Método de trabajo">
+                    <li><span>01</span>Diseñar</li>
+                    <li><span>02</span>Implementar</li>
+                    <li><span>03</span>Probar</li>
+                    <li><span>04</span>Medir</li>
+                    <li><span>05</span>Corregir</li>
+                </ol>
             </div>
         </section>
 
         <section id="perfil" class="section section-alt" aria-labelledby="profile-title">
             <div class="container">
                 <header class="section-heading">
-                    <div>
-                        <p class="section-index">02</p>
-                        <p class="section-label">PERFIL TÉCNICO</p>
-                        <h2 id="profile-title">Más allá de la interfaz.</h2>
-                    </div>
+                    <p class="section-label">Perfil técnico</p>
+                    <h2 id="profile-title">Más allá de la interfaz.</h2>
                 </header>
 
-                <div class="capabilities-grid">
-                    <article class="capability-card">
-                        <span>01</span>
-                        <h3>Desarrollo de software</h3>
-                        <p>Diseño e implementación de aplicaciones web, herramientas internas y soluciones técnicas.</p>
-                    </article>
-
-                    <article class="capability-card">
-                        <span>02</span>
-                        <h3>Inteligencia artificial</h3>
-                        <p>Integración de modelos, recuperación de información y ejecución de IA tanto local como
-                            mediante servicios externos.</p>
-                    </article>
-
-                    <article class="capability-card">
-                        <span>03</span>
-                        <h3>Sistemas e infraestructura</h3>
-                        <p>Contenedores, servidores, redes privadas, monitorización, despliegue y automatización.</p>
-                    </article>
-
-                    <article class="capability-card">
-                        <span>04</span>
-                        <h3>Arquitectura</h3>
-                        <p>Prototipado y evaluación de tecnologías equilibrando rendimiento, seguridad, mantenimiento y
-                            simplicidad.</p>
-                    </article>
-                </div>
+                <table class="data-table capabilities-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Área</th>
+                            <th scope="col">Alcance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" data-label="Área">Desarrollo de software</th>
+                            <td data-label="Alcance">Diseño e implementación de aplicaciones web, herramientas
+                                internas y soluciones técnicas.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Área">Inteligencia artificial</th>
+                            <td data-label="Alcance">Integración de modelos, recuperación de información y ejecución
+                                de IA tanto local como mediante servicios externos.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Área">Sistemas e infraestructura</th>
+                            <td data-label="Alcance">Contenedores, servidores, redes privadas, monitorización,
+                                despliegue y automatización.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Área">Arquitectura</th>
+                            <td data-label="Alcance">Prototipado y evaluación de tecnologías equilibrando rendimiento,
+                                seguridad, mantenimiento y simplicidad.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -171,8 +193,7 @@
             <div class="container">
                 <header class="section-heading section-heading-row">
                     <div>
-                        <p class="section-index">03</p>
-                        <p class="section-label">PROYECTOS</p>
+                        <p class="section-label">Proyectos</p>
                         <h2 id="projects-title">Trabajo seleccionado.</h2>
                     </div>
 
@@ -182,142 +203,181 @@
                     </p>
                 </header>
 
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-meta">
-                            <span>IA / AUTOMOCIÓN</span>
-                            <span>EN DESARROLLO</span>
-                        </div>
-                        <h3>AutoSonar</h3>
-                        <p>
-                            Plataforma experimental para analizar posibles averías
-                            mecánicas a partir de sonidos, síntomas y datos del vehículo.
-                        </p>
-                        <ul class="tech-tags" aria-label="Tecnologías">
-                            <li>React</li>
-                            <li>IA</li>
-                            <li>Vite</li>
-                        </ul>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-meta">
-                            <span>SOFTWARE / AUTOMOCIÓN</span>
-                            <span>ACTIVO</span>
-                        </div>
-                        <h3>TunnerLabAI</h3>
-                        <p>
-                            Herramienta para estimar configuraciones de preparación,
-                            potencia, par, costes aproximados y fiabilidad.
-                        </p>
-                        <ul class="tech-tags" aria-label="Tecnologías">
-                            <li>React</li>
-                            <li>Three.js</li>
-                            <li>IA</li>
-                        </ul>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-meta">
-                            <span>INFRAESTRUCTURA</span>
-                            <span>OPERATIVO</span>
-                        </div>
-                        <h3>Homelab</h3>
-                        <p>
-                            Infraestructura personal para almacenamiento, monitorización,
-                            desarrollo, multimedia e inteligencia artificial local.
-                        </p>
-                        <ul class="tech-tags" aria-label="Tecnologías">
-                            <li>Docker</li>
-                            <li>Linux</li>
-                            <li>Tailscale</li>
-                        </ul>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-meta">
-                            <span>SOFTWARE / MOVILIDAD</span>
-                            <span>EN DISEÑO</span>
-                        </div>
-                        <h3>AppRutasMoto</h3>
-                        <p>
-                            Plataforma para descubrir, organizar y compartir rutas
-                            para motocicleta.
-                        </p>
-                        <ul class="tech-tags" aria-label="Tecnologías previstas">
-                            <li>React</li>
-                            <li>Maps</li>
-                            <li>API</li>
-                        </ul>
-                    </article>
-                </div>
+                <table class="data-table projects-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Proyecto</th>
+                            <th scope="col">Dominio</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Stack</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" data-label="Proyecto">
+                                <span class="project-name">AutoSonar</span>
+                                <span class="project-desc">Plataforma experimental para analizar posibles averías
+                                    mecánicas a partir de sonidos, síntomas y datos del vehículo.</span>
+                            </th>
+                            <td data-label="Dominio">IA / Automoción</td>
+                            <td data-label="Estado"><span class="badge badge-progress">En desarrollo</span></td>
+                            <td data-label="Stack">
+                                <ul class="tech-tags" aria-label="Tecnologías">
+                                    <li>React</li>
+                                    <li>IA</li>
+                                    <li>Vite</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Proyecto">
+                                <span class="project-name">TunnerLabAI</span>
+                                <span class="project-desc">Herramienta para estimar configuraciones de preparación,
+                                    potencia, par, costes aproximados y fiabilidad.</span>
+                            </th>
+                            <td data-label="Dominio">Software / Automoción</td>
+                            <td data-label="Estado"><span class="badge badge-ok">Activo</span></td>
+                            <td data-label="Stack">
+                                <ul class="tech-tags" aria-label="Tecnologías">
+                                    <li>React</li>
+                                    <li>Three.js</li>
+                                    <li>IA</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Proyecto">
+                                <span class="project-name">Homelab</span>
+                                <span class="project-desc">Infraestructura personal para almacenamiento, monitorización,
+                                    desarrollo, multimedia e inteligencia artificial local.</span>
+                            </th>
+                            <td data-label="Dominio">Infraestructura</td>
+                            <td data-label="Estado"><span class="badge badge-ok">Operativo</span></td>
+                            <td data-label="Stack">
+                                <ul class="tech-tags" aria-label="Tecnologías">
+                                    <li>Docker</li>
+                                    <li>Linux</li>
+                                    <li>Tailscale</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Proyecto">
+                                <span class="project-name">AppRutasMoto</span>
+                                <span class="project-desc">Plataforma para descubrir, organizar y compartir rutas
+                                    para motocicleta.</span>
+                            </th>
+                            <td data-label="Dominio">Software / Movilidad</td>
+                            <td data-label="Estado"><span class="badge badge-plan">En diseño</span></td>
+                            <td data-label="Stack">
+                                <ul class="tech-tags" aria-label="Tecnologías previstas">
+                                    <li>React</li>
+                                    <li>Maps</li>
+                                    <li>API</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section id="tecnologias" class="section section-alt" aria-labelledby="tech-title">
-            <div class="container split-layout">
-                <header class="section-header">
-                    <p class="section-index">04</p>
-                    <p class="section-label">TECNOLOGÍAS</p>
+            <div class="container">
+                <header class="section-heading">
+                    <p class="section-label">Tecnologías</p>
                     <h2 id="tech-title">Stack y herramientas.</h2>
                 </header>
 
-                <div class="technology-groups">
-                    <section aria-labelledby="dev-title">
-                        <h3 id="dev-title">Desarrollo</h3>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Python</li>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                        </ul>
-                    </section>
-
-                    <section aria-labelledby="infra-title">
-                        <h3 id="infra-title">Infraestructura</h3>
-                        <ul>
-                            <li>Docker</li>
-                            <li>Linux</li>
-                            <li>Windows Server</li>
-                            <li>Tailscale</li>
-                            <li>Netlify</li>
-                        </ul>
-                    </section>
-
-                    <section aria-labelledby="tools-title">
-                        <h3 id="tools-title">Herramientas</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Visual Studio Code</li>
-                            <li>Ollama</li>
-                            <li>Open WebUI</li>
-                        </ul>
-                    </section>
-                </div>
+                <table class="data-table tech-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Desarrollo</th>
+                            <th scope="col">Infraestructura</th>
+                            <th scope="col">Herramientas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Desarrollo">JavaScript</td>
+                            <td data-label="Infraestructura">Docker</td>
+                            <td data-label="Herramientas">Git</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Desarrollo">React</td>
+                            <td data-label="Infraestructura">Linux</td>
+                            <td data-label="Herramientas">GitHub</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Desarrollo">Python</td>
+                            <td data-label="Infraestructura">Windows Server</td>
+                            <td data-label="Herramientas">Visual Studio Code</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Desarrollo">HTML5</td>
+                            <td data-label="Infraestructura">Tailscale</td>
+                            <td data-label="Herramientas">Ollama</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Desarrollo">CSS</td>
+                            <td data-label="Infraestructura">Netlify</td>
+                            <td data-label="Herramientas">Open WebUI</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section id="contacto" class="section contact-section" aria-labelledby="contact-title">
-            <div class="container contact-inner">
-                <p class="section-index">05</p>
-                <p class="section-label">CONTACTO</p>
-
-                <h2 id="contact-title">Hablemos de software.</h2>
-
-                <p>
-                    Para proyectos, colaboración o intercambio de ideas técnicas,
-                    puedes encontrarme en los siguientes canales.
-                </p>
-
-                <div class="contact-links">
-                    <a href="adrianmartisblanco@gmail.com">Correo</a>
-                    <a href="adrian@toqi.eu">Correo</a>
-                    <a href="enduronalon@gmail.com">Correo</a>
-                    <a href="https://github.com/adriMB200" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="#" aria-label="LinkedIn, pendiente de configurar">LinkedIn</a>
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="section-label">Contacto</p>
+                    <h2 id="contact-title">Hablemos de software.</h2>
+                    <p>
+                        Para proyectos, colaboración o intercambio de ideas técnicas,
+                        puedes encontrarme en los siguientes canales.
+                    </p>
                 </div>
+
+                <table class="data-table contact-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Canal</th>
+                            <th scope="col">Destino</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" data-label="Canal">Correo</th>
+                            <td data-label="Destino">
+                                <a href="mailto:adrianmartisblanco@gmail.com">adrianmartisblanco@gmail.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Canal">Correo</th>
+                            <td data-label="Destino">
+                                <a href="mailto:adrian@toqi.eu">adrian@toqi.eu</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Canal">Correo</th>
+                            <td data-label="Destino">
+                                <a href="mailto:enduronalon@gmail.com">enduronalon@gmail.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Canal">GitHub</th>
+                            <td data-label="Destino">
+                                <a href="https://github.com/adriMB200" target="_blank"
+                                    rel="noopener noreferrer">github.com/adriMB200</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-label="Canal">LinkedIn</th>
+                            <td data-label="Destino"><span class="pending">Pendiente de configurar</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
