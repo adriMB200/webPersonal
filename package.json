@@ -4,6 +4,7 @@
   "description": "Portfolio personal de AdriMB200.",
   "main": "index.js",
   "scripts": {
+    "build": "node scripts/build.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
